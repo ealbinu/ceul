@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ceul | Centro de Enlace Universitario Latam</title>
+    <meta name="description" content="Somos un centro de gestión de servicios educativos y contamos con vínculos con grandes instituciones educativas con incorporación y RVOE ante la SEP, nuestra labor radica en la gestión para la obtención garantizada de tu TÍTULO y CÉDULA profesional a nivel licenciatura, maestría y doctorado con real flexibilidad y tiempo récord.">
+    <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;700&amp;display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="app/app.css">
+  </head>
+  <body> 
+    <div id="app">
+      <b-navbar fixed-top centered shadow>
+        <template #brand>
+          <b-navbar-item href="#intro"><img src="app/imgs/ceul_simple.svg" alt="Ceul"></b-navbar-item>
+        </template>
+        <template #start>
+          <b-navbar-item href="#servicios">Servicios</b-navbar-item>
+          <b-navbar-item href="#proceso">Proceso</b-navbar-item>
+          <b-navbar-item href="#oferta">Oferta educativa vinculada</b-navbar-item>
+          <b-navbar-item href="#ventajas">Ventajas</b-navbar-item>
+          <b-navbar-item href="#contacto">Contacto</b-navbar-item>
+        </template>
+        <template #end>
+          <b-navbar-item href="https://ceul.neolms.com" target="_blank">Acceso a miembros</b-navbar-item>
+          <b-navbar-item href="https://wa.me/5565153214" target="_blank">
+            <b-icon icon="whatsapp" type="is-success"></b-icon>
+          </b-navbar-item>
+        </template>
+      </b-navbar>
+      <section id="intro">
+        <div class="has-text-centered"><img class="mainlogo mx-auto" src="app/imgs/ceul.svg" alt="Ceul"></div>
+        <canvas id="canvas3d"></canvas>
+        <!--embed(src="app/imgs/intro/index.html" :style="'width:'+w3d+'px; height:'+ h3d+'px;'").mx-auto-->
+        <!--section.section#textointroduccion-->
+        <div class="section">
+          <div class="columns">
+            <div class="column is-8 has-text-white">
+              <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500">
+                <div class="is-size-2 has-text-weight-bold mt-6">Somos un centro de gestión de servicios educativos y contamos con vínculos con grandes instituciones educativas con incorporación y RVOE ante la SEP.</div>
+                <div class="is-size-5 mt-5">Nuestra labor radica en la gestión para la obtención garantizada de tu <strong class="has-text-white">título</strong> y <strong class="has-text-white">cédula</strong> profesional a nivel licenciatura, maestría y doctorado con real flexibilidad y tiempo récord.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="iniciobg">
+        <div class="section">
+          <div class="columns">
+            <div class="column is-4"><img src="app/imgs/man.jpg" alt="" style="max-width: 220px" data-aos="fade" data-aos-duration="2000" data-aos-delay="1500"></div>
+            <div class="column is-8 py-6">
+              <div class="is-size-3 has-text-white" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500">En México y Latinomerica existen millones de personas que por algún motivo aún no se titulan, a pesar de haber iniciado sus estudios, haberlos terminado o tener la experiencia profesional.</div>
+              <div class="is-size-1 has-text-weight-bold has-text-white mt-4" data-aos="fade-top" data-aos-duration="2500" data-aos-delay="1500">Nosotros te podemos ayudar a hacer realidad el obtener tan importantes documentos.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="columns">
+          <div class="column is-8 is-offset-2 has-text-centered">
+            <div class="is-size-1">Si te <strong>identificas</strong> con alguno de los siguientes casos: </div>
+          </div>
+        </div>
+        <div class="columns is-multiline identi mt-6">
+          <div class="column is-6 is-mobile-12 is-size-5" v-for="(i, index) in identificas">
+            <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500" v-html="i"></div>
+            <!--embed(src="app/imgs/cedula/index.html" :style="'width:100%'" v-if="i=='embed'").mx-auto-->
+          </div>
+        </div>
+        <div class="columns mt-6 ponteencontacto">
+          <div class="column is-10 is-offset-1 has-text-centered">
+            <div class="my-5">
+              <div class="is-size-1">Ponte en contacto con nuestra gestión.</div>
+              <div class="is-size-3 has-text-weight-bold mt-3">¡Te garantizamos la obtención de tu Título y Cédula Profesional!</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="servicios">
+        <div class="bgfix"></div>
+        <div class="has-text-centered is-size-2 py-5 mb-5">Servicios</div>
+        <div class="columns is-align-items-center">
+          <div class="column is-6">
+            <div class="card" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="500">
+              <div class="card-header-title is-size-3 has-text-weight-bold">TITULACIÓN Y CÉDULA</div>
+              <div class="card-content is-size-5">Te ofrecemos la gestión para que los obtengas de forma rápida. <strong>¡Garantizado!</strong></div>
+            </div>
+          </div>
+          <div class="column is-6">
+            <div class="has-text-centered" data-aos="fade" data-aos-duration="1500" data-aos-delay="1500">
+              <b-icon icon="card-account-details-star" size="is-large"></b-icon>
+              <b-icon icon="file-check-outline" size="is-large"></b-icon>
+            </div>
+          </div>
+        </div>
+        <div class="columns is-align-items-center">
+          <div class="column is-6">
+            <div class="mt-5 card" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="500">
+              <div class="card-header-title is-size-3 has-text-weight-bold">CONCLUÍR Y TITULARME</div>
+              <div class="card-content is-size-5">Te ofrecemos el apoyo y seguimiento para que culmines tus estudios profesionales en nuestras universidades vinculadas, con real <strong>flexibilidad</strong>, en <strong>tiempo récord</strong> y garantizando tu Título y Cédula profesional.</div>
+            </div>
+          </div>
+          <div class="column is-6">
+            <div class="has-text-centered" data-aos="fade" data-aos-duration="1500" data-aos-delay="1500">
+              <b-icon icon="certificate" size="is-large"></b-icon>
+              <b-icon icon="file-check-outline" size="is-large"></b-icon>
+            </div>
+          </div>
+        </div>
+        <div class="columns is-align-items-center">
+          <div class="column is-6">
+            <div class="mt-5 card" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="500">
+              <div class="card-header-title is-size-3 has-text-weight-bold">INICIAR Y TITULARME</div>
+              <div class="card-content is-size-5">Te ofrecemos la gestión completa para que inicies tus estudios profesionales en nuestras universidades vinculadas, con real flexibilidad, en tiempo récord y garantizando tu <strong>Título y Cédula profesional</strong>.</div>
+            </div>
+          </div>
+          <div class="column is-6">
+            <div class="has-text-centered" data-aos="fade" data-aos-duration="1500" data-aos-delay="1500">
+              <b-icon icon="ray-start-arrow" size="is-large"></b-icon>
+              <b-icon icon="file-check-outline" size="is-large"></b-icon>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="proceso">
+        <div class="has-text-centered is-size-2 py-5 mb-5">Proceso </div>
+        <div class="columns is-align-items-center">
+          <div class="column is-8 is-offset-2">
+            <div class="is-size-3">Somos expertos en el conocimiento de las gestiones para la obtención del <strong>Título y Cédula Profesional</strong>, esto nos da un sinfín de posibilidades para ser tu mejor opción en volver realidad tus intenciones profesionales.</div>
+            <div class="is-size-4 has-text-weight-bold mt-5">Lo que debes de hacer es:</div>
+            <div data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="500">
+              <b-carousel class="mt-5" :autoplay="false">
+                <b-carousel-item :key="index" v-for="(i, index) in pasos">
+                  <section class="hero is-medium processohero">
+                    <div class="hero-body has-text-centered">
+                      <h1 class="title">Paso {{index+1}}</h1>
+                      <h2 class="subtitle is-size-3 has-text-weight-bold">{{i[0]}}
+                        <div class="subtitle" v-if="i[1]">{{i[1]}}</div>
+                      </h2>
+                    </div>
+                  </section>
+                </b-carousel-item>
+              </b-carousel>
+            </div>
+            <div class="is-size-5 mt-5 has-text-centered">Todas las posibilidades que te ofrecemos son éticas, 100% legales y además, tienen Incorporación y RVOE (Reconocimiento de Validez Oficial de Estudios) ante la SEP.</div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="oferta">
+        <div class="has-text-centered is-size-2 py-5 mb-5">Oferta educativa vinculada</div>
+        <div class="columns mt-5">
+          <div class="column is-8">
+            <div class="is-size-4">Puedes iniciar o concluír alguna de las carreras mencionadas en esta oferta educativa:</div>
+          </div>
+        </div>
+        <div class="columns mt-5">
+          <div class="column is-6">
+            <div class="my-2">
+              <div class="title">Licenciaturas</div>
+              <div v-for="(i, index) in oferta.licenciaturas">
+                <div class="cardsim" data-aos="zoom-out" :data-aos-delay="300+(index*50)"><span class="ofcard">{{i}}</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-6 seccol">
+            <div class="my-2">
+              <div class="title">Maestrías</div>
+              <div v-for="(i, index) in oferta.maestrias">
+                <div class="cardsim" data-aos="zoom-out" :data-aos-delay="300+(index*50)"><span class="ofcard">{{i}}</span></div>
+              </div>
+            </div>
+            <div class="my-5">
+              <div class="title">Doctorados</div>
+              <div v-for="(i, index) in oferta.doctorados">
+                <div class="cardsim" data-aos="zoom-out" :data-aos-delay="300+(index*50)"><span class="ofcard">{{i}}</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="ventajas">
+        <div class="has-text-centered is-size-2 py-5 mb-5">Nuestras ventajas</div>
+        <div class="section">
+          <div class="container">
+            <div class="columns">
+              <div class="column is-8 is-size-2 is-offset-2 has-text-centered">
+                <div class="ventaja" data-aos="zoom-out-down" data-aos-duration="1500" data-aos-delay="500"><strong>Garantizamos</strong> la obtención de tu Título y Cédula Profesional.</div>
+                <div class="ventaja" data-aos="zoom-out-down" data-aos-duration="1500" data-aos-delay="600"><strong>Nuestros programas de estudio</strong> son realmente flexibles y se adaptan a tu ritmo.</div>
+                <div class="ventaja" data-aos="zoom-out-down" data-aos-duration="1500" data-aos-delay="700"><strong>En tiempo récord</strong> se obtienen tu Título y Cédula Profesional, ya sea iniciando o culminando tus estudios inconclusos.</div>
+                <div class="ventaja" data-aos="zoom-out-down" data-aos-duration="1500" data-aos-delay="800"><strong>Sin exámenes</strong> de admisión.</div>
+                <div class="ventaja" data-aos="zoom-out-down" data-aos-duration="1500" data-aos-delay="900"><strong>Te asignamos un equipo de profesionales</strong> enfocados en tu caso, ya sea para gestionar tus documentos o para apoyarte en tus estudios.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="contacto">
+        <div class="has-text-centered is-size-2 py-5 mb-5">Contacto</div>
+        <div class="py-6">
+          <div class="columns has-text-centered">
+            <div class="column is-4">
+              <div class="is-size-3">Atención</div>
+              <div class="is-size-5"><a href="tel:5543903812">55 4390 3812</a><br><a href="tel:5524899790">55 2489 9790</a></div>
+            </div>
+            <div class="column is-4">
+              <div class="is-size-3">Dirección</div>
+              <div class="is-size-5">Circuito Esperanza Sur No. 225 <br> Col. Valle del Palmar <br> Pachica de Soto, Hidalgo.</div>
+            </div>
+            <div class="column is-4">
+              <div class="is-size-3">Informes</div>
+              <div class="is-size-5"><a href="mailto:info@ceul.mx">info@ceul.mx</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="py-6">
+          <div class="columns has-text-centered">
+            <div class="column is-8 is-offset-2">
+              <div class="title">Acércate a nuestros promotores y solicita información.</div>
+            </div>
+          </div>
+          <div class="columns has-text-centered">
+            <div class="column is-6 is-offset-3">
+              <div class="card my-5">
+                <div class="card-content">No importa la universidad de procedencia.</div>
+              </div>
+              <div class="card my-5">
+                <div class="card-content">No importa la cantidad de semestres que hayas cursado.</div>
+              </div>
+              <div class="card my-5">
+                <div class="card-content">Incluso si solo cursaste tu bachillerato, podemos apoyarte.</div>
+              </div>
+            </div>
+          </div>
+          <div class="columns has-text-centered">
+            <div class="column is-10 is-offset-1">
+              <p>En CEUL, siempre tendremos una alternativa para ti, acércate y platica tu caso a uno de nuestros asesores expertos, quienes con gusto te orientarán en tu proceso para la obtención de tu Título y Cédula profesional.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/smoothscroll@0.4.0/smoothscroll.js"></script>
+    <!--bg-->
+    <script src="https://unpkg.com/three@^0.131.0/build/three.min.js"></script>
+    <script src="app/imgs/bg/runtime.js"></script>
+    <!--script(src="app/imgs/cedula/runtime.js")-->
+    <script src="app/app.js"></script>
+  </body>
+</html>

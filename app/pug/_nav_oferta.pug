@@ -1,0 +1,22 @@
+section.section#oferta
+    .has-text-centered.is-size-2.py-5.mb-5 Oferta educativa vinculada
+    
+    .columns.mt-5
+        .column.is-8
+            .is-size-4 Puedes iniciar o concluír alguna de las carreras mencionadas en esta oferta educativa:
+    .columns.mt-5
+        .column.is-6
+            .my-2
+                .title Licenciaturas
+                div(v-for="(i, index) in oferta.licenciaturas")
+                    div(data-aos="zoom-out" :data-aos-delay="300+(index*50)").cardsim: span.ofcard {{i}}
+        .column.is-6.seccol
+                .my-2
+                    .title Maestrías
+                    div(v-for="(i, index) in oferta.maestrias")
+                        div(data-aos="zoom-out" :data-aos-delay="300+(index*50)").cardsim: span.ofcard {{i}}
+                .my-5
+                    .title Doctorados
+                    div(v-for="(i, index) in oferta.doctorados")
+                        div(data-aos="zoom-out" :data-aos-delay="300+(index*50)").cardsim: span.ofcard {{i}}
+    

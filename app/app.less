@@ -1,0 +1,191 @@
+@mainblue : #0E47BB;
+@darkblue: #071D49;
+@greyblue: #95A7CC;
+@green: #88dd99;
+
+
+html,body{
+    scroll-behavior: smooth;
+    height: 100%;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 300;
+}
+
+body{
+    color: #222;
+}
+
+#app {
+    section.section{
+        padding-top: 140px;
+        padding-bottom: 140px;
+        overflow: hidden;
+    }
+    section{
+        line-height: 1;
+        &>*{
+            line-height: 1.2;
+        }
+    }
+}
+
+
+
+#intro {
+    background-image: linear-gradient(rgba(255,255,255,.1), @greyblue, @mainblue, @darkblue);
+    padding: 100px 0;
+    img{
+        width: 70%;
+        max-width: 360px;
+        position: relative;
+        z-index: 1;
+    }
+    canvas { width: 100% !important; height: 100% !important; outline: none; 
+        position: absolute;
+        left: 0; top: 0; bottom: 0; right: 0;
+        z-index: 0;
+    }
+    .containerbg { width: 100%; height: 100%; position: relative; }
+
+}
+
+.iniciobg{
+    //background-image: url(imgs/ceul_iniciobg.jpg);
+    background-color: @darkblue;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+}
+
+
+.identi{
+
+    .column{
+        display: flex;
+        div{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            padding: 50px 20px;
+            background: @darkblue;
+            color:#fff;
+            font-weight: bold;
+
+            flex-direction: column;
+            strong{
+                width: 100%;
+                display: block;
+                font-size: 2rem;
+                color:@greyblue;
+            }
+        }
+    }
+}
+
+
+
+
+#servicios{
+    position: relative;
+    background:@mainblue;
+    color:#fff;
+    .card{
+        box-shadow: none;
+        background: fade(@greyblue, 15%);
+        color:#fff;
+        padding: 60px 0;
+        .card-header-title {
+            color:#fff;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+        strong{
+            color: @green;
+        }
+    }
+    .icon.is-large{
+        width: 6rem;
+        color: #fff;
+        &:nth-child(2){
+            color: @green;
+        }
+    }
+    .mdi-48px{
+        font-size: 96px;
+        &:before{
+            font-size: 96px;
+        }
+    }
+
+    .bgfix{
+        position: absolute;
+        z-index: 1;
+        left: 0; right: 0;
+        top: 0; bottom: 0;
+        background-image: url(imgs/ceul_servs.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        z-index: 0;
+        opacity: 0.1;
+    }
+
+}
+
+.processohero{
+    background: fade(@greyblue, 15%);
+    .title{
+        color: @greyblue;
+    }
+    .subtitle{
+        color: @darkblue;
+    }
+}
+
+
+#oferta{
+    background:@greyblue;
+    background-image: url(imgs/ceul_bgoferta.jpg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    margin: 8px 0;
+    .cardsim{
+        margin: 2px 0;
+    }
+    .ofcard{
+        display: inline-block;
+        border-bottom: 2px solid @darkblue;
+        padding: 3px 10px;
+    }
+    .seccol{
+        @media (min-width:754px){
+            padding-top: 10%;
+        }
+    }
+}
+
+
+#ventajas{
+    .ventaja{
+        margin: 14rem 0;
+    }
+
+}
+
+#contacto{
+    background-image: linear-gradient(@darkblue, @mainblue, @greyblue );
+    color:#fff;
+    a{
+        color: @green;
+    }
+    .title{color: #fff}
+}
+
+.snackbar .action.is-cancel .button{
+    background: @mainblue;
+}

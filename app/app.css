@@ -1,0 +1,168 @@
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+  font-family: 'Noto Sans Display', sans-serif;
+  font-weight: 300;
+}
+body {
+  color: #222;
+}
+#app section.section {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  overflow: hidden;
+}
+#app section {
+  line-height: 1;
+}
+#app section > * {
+  line-height: 1.2;
+}
+#intro {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), #95A7CC, #0E47BB, #071D49);
+  padding: 100px 0;
+}
+#intro img {
+  width: 70%;
+  max-width: 360px;
+  position: relative;
+  z-index: 1;
+}
+#intro canvas {
+  width: 100% !important;
+  height: 100% !important;
+  outline: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+#intro .containerbg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.iniciobg {
+  background-color: #071D49;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+}
+.identi .column {
+  display: flex;
+}
+.identi .column div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  background: #071D49;
+  color: #fff;
+  font-weight: bold;
+  flex-direction: column;
+}
+.identi .column div strong {
+  width: 100%;
+  display: block;
+  font-size: 2rem;
+  color: #95A7CC;
+}
+#servicios {
+  position: relative;
+  background: #0E47BB;
+  color: #fff;
+}
+#servicios .card {
+  box-shadow: none;
+  background: rgba(149, 167, 204, 0.15);
+  color: #fff;
+  padding: 60px 0;
+}
+#servicios .card .card-header-title {
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+#servicios .card strong {
+  color: #88dd99;
+}
+#servicios .icon.is-large {
+  width: 6rem;
+  color: #fff;
+}
+#servicios .icon.is-large:nth-child(2) {
+  color: #88dd99;
+}
+#servicios .mdi-48px {
+  font-size: 96px;
+}
+#servicios .mdi-48px:before {
+  font-size: 96px;
+}
+#servicios .bgfix {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: url(imgs/ceul_servs.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+  opacity: 0.1;
+}
+.processohero {
+  background: rgba(149, 167, 204, 0.15);
+}
+.processohero .title {
+  color: #95A7CC;
+}
+.processohero .subtitle {
+  color: #071D49;
+}
+#oferta {
+  background: #95A7CC;
+  background-image: url(imgs/ceul_bgoferta.jpg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  margin: 8px 0;
+}
+#oferta .cardsim {
+  margin: 2px 0;
+}
+#oferta .ofcard {
+  display: inline-block;
+  border-bottom: 2px solid #071D49;
+  padding: 3px 10px;
+}
+@media (min-width: 754px) {
+  #oferta .seccol {
+    padding-top: 10%;
+  }
+}
+#ventajas .ventaja {
+  margin: 14rem 0;
+}
+#contacto {
+  background-image: linear-gradient(#071D49, #0E47BB, #95A7CC);
+  color: #fff;
+}
+#contacto a {
+  color: #88dd99;
+}
+#contacto .title {
+  color: #fff;
+}
+.snackbar .action.is-cancel .button {
+  background: #0E47BB;
+}
+/*# sourceMappingURL=app.css.map */

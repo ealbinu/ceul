@@ -1,0 +1,18 @@
+section.section#proceso
+    .has-text-centered.is-size-2.py-5.mb-5 Proceso 
+    .columns.is-align-items-center
+        .column.is-8.is-offset-2
+            .is-size-3 Somos expertos en el conocimiento de las gestiones para la obtención del #[strong Título y Cédula Profesional], esto nos da un sinfín de posibilidades para ser tu mejor opción en volver realidad tus intenciones profesionales.
+
+            .is-size-4.has-text-weight-bold.mt-5 Lo que debes de hacer es:
+            
+            div( data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="500" )
+                b-carousel(:autoplay="false").mt-5
+                    b-carousel-item(:key="index" v-for="(i, index) in pasos")
+                        section.hero.is-medium.processohero
+                            .hero-body.has-text-centered
+                                h1.title Paso {{index+1}}
+                                h2.subtitle.is-size-3.has-text-weight-bold {{i[0]}}
+                                    .subtitle(v-if="i[1]") {{i[1]}}
+
+            .is-size-5.mt-5.has-text-centered Todas las posibilidades que te ofrecemos son éticas, 100% legales y además, tienen Incorporación y RVOE (Reconocimiento de Validez Oficial de Estudios) ante la SEP.

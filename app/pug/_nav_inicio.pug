@@ -1,0 +1,43 @@
+section#intro
+    .has-text-centered: img(src="app/imgs/ceul.svg" alt="Ceul").mainlogo.mx-auto
+    canvas#canvas3d
+
+    //embed(src="app/imgs/intro/index.html" :style="'width:'+w3d+'px; height:'+ h3d+'px;'").mx-auto
+    //section.section#textointroduccion
+    .section: .columns
+        .column.is-8.has-text-white
+            div(data-aos="fade-right"  data-aos-duration="1500" data-aos-delay="500")
+                .is-size-2.has-text-weight-bold.mt-6 Somos un centro de gestión de servicios educativos y contamos con vínculos con grandes instituciones educativas con incorporación y RVOE ante la SEP.
+                .is-size-5.mt-5 Nuestra labor radica en la gestión para la obtención garantizada de tu #[strong.has-text-white título] y #[strong.has-text-white cédula] profesional a nivel licenciatura, maestría y doctorado con real flexibilidad y tiempo récord.
+    
+section.iniciobg
+    .section
+        .columns
+            .column.is-4: img(src="app/imgs/man.jpg", alt="" style="max-width: 220px" data-aos="fade" data-aos-duration="2000" data-aos-delay="1500")
+            .column.is-8.py-6
+                div(data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500").is-size-3.has-text-white En México y Latinomerica existen millones de personas que por algún motivo aún no se titulan, a pesar de haber iniciado sus estudios, haberlos terminado o tener la experiencia profesional.
+                div(data-aos="fade-top" data-aos-duration="2500" data-aos-delay="1500").is-size-1.has-text-weight-bold.has-text-white.mt-4 Nosotros te podemos ayudar a hacer realidad el obtener tan importantes documentos.
+
+
+
+section.section
+    .columns
+        .column.is-8.is-offset-2.has-text-centered
+            .is-size-1 Si te #[strong identificas] con alguno de los siguientes casos: 
+    .columns.is-multiline.identi.mt-6
+        .column.is-6.is-mobile-12.is-size-5(v-for="(i, index) in identificas")
+            div(data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500" v-html="i")
+            //embed(src="app/imgs/cedula/index.html" :style="'width:100%'" v-if="i=='embed'").mx-auto
+
+    .columns.mt-6.ponteencontacto
+        .column.is-10.is-offset-1.has-text-centered
+            .my-5
+                .is-size-1 Ponte en contacto con nuestra gestión.
+                .is-size-3.has-text-weight-bold.mt-3 ¡Te garantizamos la obtención de tu Título y Cédula Profesional!
+
+
+
+
+
+
+
