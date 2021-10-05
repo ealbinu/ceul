@@ -63,10 +63,7 @@ var app = new Vue({
 
         }
     },
-    mounted () {
-        AOS.init()
-        console.log('mounted')
-    },
+
     methods: {
         calculateAspectRatioFit(srcWidth, srcHeight, maxWidth, maxHeight) {
             var ratio = Math.min(maxWidth / srcWidth, maxHeight / srcHeight);
@@ -83,6 +80,7 @@ var app = new Vue({
         window.addEventListener("resize", this.resize3ds);
     },
     mounted () {
+        AOS.init()
         this.$buefy.snackbar.open({
             position: 'is-bottom',
             type: 'is-white',
