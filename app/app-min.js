@@ -54,6 +54,7 @@ var app = new Vue({
                     'EDUCACIÓN',
                     'FINANZAS',
                     'IMPUESTOS CON ENFOQUE ESTRATÉGICO',
+                    'CRIMINALÍSTICA Y DERECHO PENAL'
                 ],
                 doctorados: [
                     'EDUCACIÓN',

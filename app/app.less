@@ -137,7 +137,6 @@ body{
 }
 
 .processohero{
-    background: fade(@greyblue, 15%);
     .title{
         color: @greyblue;
     }
@@ -145,6 +144,21 @@ body{
         color: @darkblue;
     }
 }
+
+
+
+.carousel{
+    background-image: url(imgs/clue_graduacion.png);
+     background-position: center;
+     background-size: cover;
+     padding-bottom: 100px;
+     .hero.is-medium {
+         background: transparent;
+         .hero-body{
+             padding: 3rem 4.5rem 12rem;
+         }
+     }
+ }
 
 
 #oferta{
@@ -178,14 +192,30 @@ body{
 }
 
 #contacto{
+    position: relative;
     background-image: linear-gradient(@darkblue, @mainblue, @greyblue );
     color:#fff;
     a{
         color: @green;
     }
     .title{color: #fff}
+
+    .bgfix{
+        position: absolute;
+        z-index: 1;
+        left: 0; right: 0;
+        top: 0; bottom: 0;
+        background-image: url(imgs/ceul_contacto.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        z-index: 0;
+        opacity: 0.1;
+    }
 }
 
 .snackbar .action.is-cancel .button{
     background: @mainblue;
 }
+
+
+
