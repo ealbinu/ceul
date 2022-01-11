@@ -290,15 +290,6 @@
 		"oO": 0,
 		"oS": 1
 		},
-	"\/app\/index.pug": {
-		"cB": 0,
-		"cOD": 1,
-		"ft": 512,
-		"oA": 0,
-		"oAP": "\/index.html",
-		"oF": 2,
-		"oS": 0
-		},
 	"\/app\/pug\/_head.pug": {
 		"cB": 0,
 		"cOD": 1,
@@ -2432,7 +2423,7 @@
 			"flagValue": -1
 			},
 		"comments": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"comparisons": {

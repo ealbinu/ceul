@@ -22,6 +22,7 @@ body {
 #intro {
   background-image: linear-gradient(rgba(255, 255, 255, 0.1), #95A7CC, #0E47BB, #071D49);
   padding: 100px 0;
+  position: relative;
 }
 #intro img {
   width: 70%;
@@ -187,5 +188,26 @@ body {
 }
 .snackbar .action.is-cancel .button {
   background: #0E47BB;
+}
+.univenlinea {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  max-width: 30%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #071D49;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+@media (max-width: 760px) {
+  .univenlinea {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 540px) {
+  .univenlinea {
+    font-size: 0.9rem;
+  }
 }
 /*# sourceMappingURL=app.css.map */
