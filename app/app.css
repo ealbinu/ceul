@@ -191,23 +191,35 @@ body {
 }
 .univenlinea {
   position: absolute;
-  right: 5px;
-  top: 5px;
+  right: 10px;
+  top: 68px;
   max-width: 30%;
   text-align: center;
-  font-weight: bold;
-  font-size: 2rem;
+  font-weight: 700;
+  font-size: 3.4rem;
   color: #071D49;
+  z-index: 10;
   text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+@media (max-width: 1200px) {
+  .univenlinea {
+    font-size: 2.6rem;
+  }
+}
+@media (max-width: 920px) {
+  .univenlinea {
+    font-size: 2.3rem;
+  }
 }
 @media (max-width: 760px) {
   .univenlinea {
-    font-size: 1.4rem;
+    max-width: 50%;
+    font-size: 2rem;
   }
 }
 @media (max-width: 540px) {
   .univenlinea {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
   }
 }
 /*# sourceMappingURL=app.css.map */
